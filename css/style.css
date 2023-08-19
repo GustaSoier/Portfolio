@@ -1,0 +1,171 @@
+/* #region global */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+/* font-family: 'Poppins', sans-serif; */
+
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins', sans-serif;
+}
+
+body{
+    background-color: #171717;
+    min-height: 100vh;
+}
+
+::-webkit-scrollbar{
+    width: 15px;
+    background-color: #fff;
+}
+
+::-webkit-scrollbar-thumb{
+    width: 15px;
+    background-color: #00ff08;
+}
+
+.interface{
+    max-width: 1280px;
+    margin: 0 auto;
+}
+
+.flex{
+    display: flex;
+}
+
+.btn-contato button{
+    font-size: 18px;
+    padding: 10px 40px;
+    font-weight: 600;
+    background-color: #00ff08;
+    border: 0;
+    border-radius: 30px;
+    cursor: pointer;
+    transition: .2s;
+}
+
+h2.titulo{
+    color: #fff;
+    font-size: 38px;
+    text-align: center;
+}
+
+h2.titulo span{
+    color: #00ff08;
+}
+/* #endregion global */
+
+/* #region header */
+header{
+    padding: 40px 4%;
+}
+
+header > .interface{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+header a{
+    font-size: 19px;
+    color: #5c5c5c;
+    text-decoration: none;
+    display: inline-block;
+    transition: .2s;
+}
+
+header a:hover{
+    color: #fff;
+    transform: scale(1.05);
+}
+
+header nav ul{
+    list-style-type: none;
+}
+
+header nav li{
+    display: inline-block;
+    padding: 0 40px;
+}
+
+.btn-contato button:hover{
+    box-shadow: 0 0 8px #00ff0868;
+    transform: scale(1.05);
+}
+/* #endregion header */
+
+/* #region topo */
+.topo-do-site{
+    padding: 70px 4%;
+}
+
+section.topo-do-site .flex{
+    align-items: center;
+    justify-content: center;
+    gap: 90px;
+}
+
+.topo-do-site h1{
+    color: #fff;
+    font-size: 42px;
+    line-height: 40px;
+}
+
+.topo-do-site .txt-topo-site h1 span{
+    color: #00ff08;
+}
+
+.topo-do-site .txt-topo-site p{
+    color: #fff;
+    margin: 40px 0;
+}
+
+.topo-do-site .img-topo-site img{
+    position: relative;
+    animation: flutuar 2s ease-in-out infinite alternate;
+}
+
+@keyframes flutuar{
+    0%{
+        top: 0;
+    }
+
+    100%{
+        top: 30px;
+    }
+}
+/* #endregion topo */
+
+/* #region especialidades */
+section.especialidades{
+    padding: 40px 4%;
+}
+
+section.especialidades .flex{
+    gap: 60px;
+}
+
+.especialidades .especialidades-box{
+    color: #fff;
+    padding: 40px;
+    margin-top: 45px;
+    border-radius: 20px;
+    transition: .2s;
+}
+
+.especialidades .especialidades-box:hover{
+    transform: scale(1.05);
+    box-shadow: 0 0 8px #ffffff79;
+}
+
+.especialidades .especialidades-box i{
+    font-size: 70px;
+    color: #00ff08;
+}
+
+.especialidades .especialidades-box h3{
+    font-size: 28px;
+    margin: 15px 0;
+}
+/* #endregion especialidades */

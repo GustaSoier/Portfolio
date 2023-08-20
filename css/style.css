@@ -59,6 +59,18 @@ button:hover, form .btn-enviar input:hover{
     box-shadow: 0 0 8px #00ff0868;
     transform: scale(1.05);
 }
+
+.btn-social button{
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    background-color: #00ff08;
+    border: none;
+    font-size: 25px;
+    cursor: pointer;
+    margin: 0 8px;
+    transition: .2s;
+}
 /* #endregion global */
 
 /* #region header */
@@ -199,18 +211,6 @@ section.sobre .flex{
     margin: 30px 0;
     text-align: justify;
 }
-
-.sobre .txt-sobre .btn-social button{
-    width: 60px;
-    height: 60px;
-    border-radius: 50%;
-    background-color: #00ff08;
-    border: none;
-    font-size: 25px;
-    cursor: pointer;
-    margin: 0 8px;
-    transition: .2s;
-}
 /* #endregion sobre */
 
 /* #region portfólio */
@@ -305,3 +305,130 @@ form .btn-enviar input{
     transition: .2s;
 }
 /* #endregion formulário */
+
+/* #region rodapé */
+footer{
+    padding: 60px 4%;
+    box-shadow: 0 0 40px 10px #ffffff1d;
+}
+
+footer .flex{
+    justify-content: space-between;
+}
+
+footer .line-footer{
+    padding: 20px 0;
+}
+
+.borda{
+    border-bottom: solid 2px #00ff08;
+}
+
+footer .line-footer p i{
+    color: #00ff08;
+    font-size: 22px;
+}
+
+footer .line-footer p a{
+    color: #fff;
+    text-decoration: none;
+}
+/* #endregion rodapé */
+
+
+
+/* #region responsive */
+@media screen and (max-width: 1020px){
+/* #region responsive global */
+.flex{
+    flex-direction: column-reverse;
+}
+
+h2.titulo{
+    font-size: 30px;
+    line-height: 30px;
+}
+/* #endregion responsive global */
+
+/* #region responsive header */
+.menu-desktop, .btn-contato{
+    display: none;
+}
+/* #endregion responsive header */
+
+/* #region responsive topo */
+section.topo-do-site .flex{
+    gap: 40px;
+}
+
+section.topo-do-site{
+    padding: 20px 8%;
+}
+
+.topo-do-site h1{
+    font-size: 30px;
+}
+
+.topo-do-site .img-topo-site img{
+    width: 100%
+}
+/* #endregion topo */
+
+/* #region responsive habilidades */
+section.especialidades{
+    padding: 40px 8%;
+}
+/* #endregion responsive habilidades */
+
+/* #region responsive sobre */
+section.sobre{
+    padding: 40px 8%;
+}
+
+.sobre .txt-sobre h2{
+    font-size: 34px;
+    line-height: 35px;
+    text-align: center;
+}
+
+.btn-social{
+    text-align: center;
+}
+
+.img-sobre img{
+    width: 100%;
+}
+/* #endregion responsive sobre */
+
+/* #region responsive portfólio */
+section.portfolio{
+    padding: 80px 8%;
+}
+
+section.portfolio .flex{
+    flex-direction: column;
+}
+
+.img-portfolio{
+    width: 100%;
+    max-width: 360px;
+    margin: 0 auto;
+}
+
+section.portfolio .flex{
+    gap: 60px;
+}
+/* #endregion responsive portfólio */
+
+/* #region responsive rodapé */
+footer .flex{
+    flex-direction: column;
+    gap: 30px;
+}
+
+footer .line-footer{
+   text-align: center; 
+}
+/* #endregion responsive rodapé */
+}
+/* #endregion responsive */

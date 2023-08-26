@@ -39,7 +39,7 @@
             <div class="interface">
                 <div class="flex">
                     <div class="txt-topo-site">
-                        <h1>TRANSFORMANDO IDEIAS EM REALIDADE DIGITAL<span>.</span></h1>
+                        <h1>TRANSFORMANDO IDEIAS EM <span class="digitando"></span> </h1>
 
                         <p>Criatividade e inovação andam lado a lado. Com uma combinação única de design impactante, funcionalidade intuitiva e otimização para resultados, estou pronto para criar a presença online dos seus sonhos.</p>
 
@@ -53,8 +53,8 @@
                     <div class="img-topo-site">
                         <img src="img/pessoa.png" alt="Foto flutuante">
                     </div>
+        
                 </div>
-
             </div>
 
         </section>
@@ -157,5 +157,19 @@
                 </div>
             </div>
         </footer>
+
+ <!-- escrita animada em js -->
+<script src="https://unpkg.com/typed.js@2.0.16/dist/typed.umd.js"></script>
+        
+<script>//  aqui eu criei para a palavra "website" do sobre ficar escrevendo sozinho
+    var typingeffect = new Typed(".digitando", {
+        strings: ["REALIDADE DIGITAL."],
+        loop: true,
+        typeSpeed: 150,
+        backSpeed: 100,
+        backDelay: 1500,
+      });
+      </script>
+
 </body>
 </html>

@@ -31,6 +31,24 @@
                 <button>Contato</button>
                 </a>
             </div>
+
+            <div class="btn-abrir-menu" id="btn-menu"><i class="bi bi-list"></i></div>
+
+            <div class="menu-mobile" id="menu-mobile">
+                <div class="btn-fechar"><i class="bi bi-x-lg"></i></div>
+                
+                    <nav>
+                        <ul>
+                            <li><a href="#">Início</a></li>
+                            <li><a href="#">Especialidades</a></li>
+                            <li><a href="#">Sobre</a></li>
+                            <li><a href="#">Projetos</a></li>
+                            <li><a href="#">Contato</a></li>
+                        </ul>
+                    </nav>
+                </div>
+
+                <div class="overlay-menu" id="overlay-menu"></div>
         </div>
     </header>
 
@@ -137,7 +155,8 @@
             </div>
         </section>
 </main>
-        <footer>
+
+<footer>
             <div class="interface">
                 <div class="line-footer borda">
                     <div class="flex">
@@ -156,20 +175,11 @@
                     <p><i class="bi bi-envelope-fill"></i><a href="#"> contato@gustavo.com.br</a></p>
                 </div>
             </div>
-        </footer>
+</footer>
 
  <!-- escrita animada em js -->
 <script src="https://unpkg.com/typed.js@2.0.16/dist/typed.umd.js"></script>
         
-<script>//  aqui eu criei para a palavra "website" do sobre ficar escrevendo sozinho
-    var typingeffect = new Typed(".digitando", {
-        strings: ["REALIDADE DIGITAL."],
-        loop: true,
-        typeSpeed: 150,
-        backSpeed: 100,
-        backDelay: 1500,
-      });
-      </script>
-
+<script src="js/script.js"></script>
 </body>
 </html>

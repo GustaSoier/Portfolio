@@ -369,6 +369,11 @@ h2.titulo{
 
 .btn-abrir-menu{
     display: block;
+    transition: .4s;
+}
+
+.btn-abrir-menu:hover{
+    transform: rotate(180deg);
 }
 
 .menu-mobile{

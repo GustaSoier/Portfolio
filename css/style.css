@@ -217,6 +217,7 @@ section.sobre .flex{
 .sobre .txt-sobre p{
     margin: 30px 0;
     text-align: justify;
+    font-size: 19px;
 }
 /* #endregion sobre */
 
